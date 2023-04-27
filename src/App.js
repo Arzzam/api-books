@@ -7,7 +7,7 @@ import BookDetails from "./components/Book/BookDetails/BookDetails";
 function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/api-task">
         <Routes>
           <Route path="/" element={<Home />}>
             <Route path="book" element={<BookList />} />
