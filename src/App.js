@@ -9,8 +9,8 @@ function App() {
     <AppProvider>
       <BrowserRouter basename="/api-task">
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route path="book" element={<BookList />} />
+          <Route path="/api-task" element={<Home />}>
+            <Route path="/book" element={<BookList />} />
             <Route path="/book/:id" element={<BookDetails />} />
           </Route>
         </Routes>
